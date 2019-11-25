@@ -6,9 +6,8 @@ def fnB(*args):
     print("QQ",*args)
 
 
-Butt = Button(root,text="Butt ON")
-Butt.bind("<Button 1>",fnB)
-Butt.grid()
+Butt1 = Button(root,command=root.quit,text="Butt ON")
+Butt1.grid()
 
 root.mainloop()
-print("QQ")
+root.destroy()
