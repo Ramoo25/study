@@ -3,10 +3,11 @@ from tkinter import *
 root = Tk()
 
 def fnB(*args):
-    print("QQ",args)
+    print("QQ",*args)
 
 
-Butt = Button(root,command = fnB,text="Butt ON")
+Butt = Button(root,text="Butt ON")
+Butt.bind("<Button 1>",fnB)
 Butt.grid()
 
 root.mainloop()
