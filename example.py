@@ -2,12 +2,17 @@ from tkinter import *
 
 root = Tk()
 
-def fnB(*args):
-    print("QQ",*args)
+def dump(*args):
+    print("DUMP:",*args)
 
 
-Butt1 = Button(root,command=root.quit,text="Butt ON")
+Butt1 = Button(root,text="Butt ON")
 Butt1.grid()
+Butt1.bind("<Button-1>",dump)
+
+Exit = Button(root,command=root.quit,text="Exit")
+Exit.grid()
+
 
 root.mainloop()
 root.destroy()
