@@ -13,8 +13,8 @@ Butt1.bind("<Button-1>",dump)
 Exit = Button(root,command=root.quit,text="Exit")
 Exit.grid(row=0,column=1)
 
-Txt = Label(root,text="This is a label",bg="green",fg="red")
-Txt.grid(row=1,column=0)
+Txt = Label(root,text="This is a label",bg="PeachPuff",fg="red")
+Txt.grid(row=1,column=0,columnspan=2)
 
 root.mainloop()
 #root.destroy()
