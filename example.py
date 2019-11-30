@@ -1,13 +1,20 @@
 from tkinter import *
 
-root = Tk()
+
+def dump(*args):
+    print("DUMP:",*args)
+
+
+TKroot = Tk()
+TKroot.title("Hello")
+
+root = Frame(TKroot)
+root.place(relx=0,rely=0,relheight=1,relwidth=1)
+
 root.columnconfigure(0,weight = 1)
 root.columnconfigure(1,weight = 1)
 root.rowconfigure(0,weight = 1)
 root.rowconfigure(1,weight = 0)
-
-def dump(*args):
-    print("DUMP:",*args)
 
 
 Butt1 = Button(root,text="Butt ON")
@@ -20,5 +27,5 @@ Exit.grid(row=0,column=1,sticky=E+W+S+N)
 Txt = Label(root,text="This is a label",bg="PeachPuff",fg="red")
 Txt.grid(row=1,column=0,columnspan=2,sticky=E+W+N)
 
-root.mainloop()
+TKroot.mainloop()
 #root.destroy()
