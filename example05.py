@@ -2,6 +2,8 @@
     Пример работы с редактируемым текстом
 '''
 
+#MORE JUNK COMMIT
+
 from tkinter import *
 
 
